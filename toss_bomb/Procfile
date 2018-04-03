@@ -1,1 +1,1 @@
-worker: python bomb_game_main.py
+bot: python bomb_game_main.py

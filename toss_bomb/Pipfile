@@ -12,6 +12,7 @@ tornado = "==5.0.1"
 virtualenv = "==15.2.0"
 virtualenv-clone = "==0.3.0"
 gunicorn = "*"
+django-heroku = "*"
 
 [dev-packages]
 

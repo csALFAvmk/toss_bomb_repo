@@ -1,1 +1,1 @@
-bot: python manage.py
+web: geticorn toss_bomb.wsgi --log-file -

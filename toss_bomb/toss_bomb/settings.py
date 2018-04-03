@@ -25,6 +25,8 @@ SECRET_KEY = 'ib0(iypiu**pta8wm3a9!qe!ntwl&t+x20l)m5&g+s7o--44!u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+TEST_RUNNER = 'toss_bomb.bomb_game_main.main'
+
 ALLOWED_HOSTS = ['*']
 
 

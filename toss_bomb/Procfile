@@ -1,1 +1,1 @@
-bot: python bomb_game_main.py
+bot: python manage.py

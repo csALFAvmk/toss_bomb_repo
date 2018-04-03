@@ -7,6 +7,7 @@ Created on 21. 7. 2017
 import json
 import copy
 import urllib
+import requests
 from urllib.request import urlopen
 
 API = 'https://api.telegram.org/bot'
@@ -23,6 +24,14 @@ def getUpdates():
     get = URL + '/getUpdates'
     response = urlopen(get)
     return response.read()
+
+def get_updates(self, offset=None, timeout=30):
+    method = 'getUpdates'
+    params = {'timeout': timeout, 'offset': offset}
+    resp = requests.get(URL + method, params)
+    #result_json = resp.json()['result']
+    return "result_json"
+
 
 def getFirstName():
     js = json.loads(getUpdates())

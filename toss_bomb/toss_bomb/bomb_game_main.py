@@ -9,11 +9,22 @@ import time
 import tg_interface
 import bomb_logic
 import ConvertMath
+from toss_bomb.tg_interface import last_update_id
 #import requirements
 
+global last_update_id
 
 def main():
+    
+    new_offset = None
+    
     while True:
+        
+        tg_interface.get_updates(new_offset)
+        
+        #last_update = tg_interface.get_last_update()
+        #last_update_id = last_update['update_id']
+        
         command = tg_interface.getCommand()
         if None != command:
             my_chat_id=tg_interface.getChatId()#'289795148'#
@@ -144,7 +155,10 @@ def main():
                 tg_interface.sendMessage(victim_chat_id, victim_text_to_send)
             
             #resetUpdate_id()
-        time.sleep(1)
+            
+            new_offset = last_update_id+1
+        
+        
 if __name__ == '__main__':  
     try:
         main()

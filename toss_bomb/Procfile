@@ -1,1 +1,1 @@
-web: gunicorn toss_bomb.wsgi
+web: gunicorn toss_bomb.wsgi --log-file -

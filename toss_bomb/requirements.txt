@@ -1,7 +1,2 @@
 certifi==2018.1.18
-Django==2.0.3
-pipenv==11.9.0
-pytz==2018.3
-tornado==5.0.1
-virtualenv==15.2.0
-virtualenv-clone==0.3.0
+

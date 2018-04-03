@@ -1,1 +1,1 @@
-web: gunicorn toss_bomb.wsgi --log-file -
+worker: python toss_bomb.py
